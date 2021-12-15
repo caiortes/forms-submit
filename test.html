@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Envio de Emails</h1>
+        <p id="subtitulo">Preencha suas informações:</p>
+        <br>
+    </div>
+
+    <form action="https://formsubmit.co/caiortes.machado@hotmail.com" method="POST">
+        <fieldset class="group">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id= "nome" requeired>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" id="assunto">
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+            </div>
+            <!-- Inputs for FormSubmit --> 
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="true">
+        </fieldset>
+        
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
